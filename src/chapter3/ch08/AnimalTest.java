@@ -60,8 +60,10 @@ public class AnimalTest {
         animalTest.testDownCasting(animals);
     }
 
+    //다운캐스팅은 원래의 형태로 타입을 돌림 .. 명시적으로 해줘야함
     public void testDownCasting(ArrayList<Animal> list) {
         for (Animal animal : list) {
+            //instanceof 는 왼쪽타입이 오른쪽타입이 맞는지 확인하는 것.. true false를 반환
             if(animal instanceof Human) {
                 Human human = (Human) animal;
                 human.move();

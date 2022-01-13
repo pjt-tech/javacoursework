@@ -2,8 +2,8 @@ package chapter3.ch01;
 
 public class Customer {
 
-    private int customerID;
-    private String customerName;
+    protected int customerID;
+    protected String customerName;
     protected String customerGrade;
     int bonusPoint;
     double bonusRatio;

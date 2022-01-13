@@ -1,6 +1,9 @@
 package chapter3.ch09;
 
 public class Desktop extends Computer{
+    public Desktop() {
+    }
+
     @Override
     public void display() {
         System.out.println("Desktop display");
