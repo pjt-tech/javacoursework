@@ -6,6 +6,7 @@ public class StringBuilderTest {
         String java = new String("java");
         String android = new String("android");
 
+        //Buffer 는 멀티쓰레드일때 사용한다.
         StringBuilder builder = new StringBuilder(java);
         System.out.println(System.identityHashCode(builder));
         builder.append(android);
