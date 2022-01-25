@@ -1,5 +1,7 @@
 package chapter5.array;
 
+import java.util.ArrayList;
+
 public class MyArrayTest {
     public static void main(String[] args) {
 
@@ -23,6 +25,7 @@ public class MyArrayTest {
 
         System.out.println("===============");
         System.out.println(array.getElement(2));
-
+        System.out.println("===============");
+        array.printAll();
     }
 }

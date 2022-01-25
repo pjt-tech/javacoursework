@@ -22,8 +22,10 @@ public class MyLinkedList {
         else{
             newNode = new MyListNode(data);
             MyListNode temp = head;
-            while(temp.next != null)  //맨 뒤로 가서
+            while(temp.next != null) {
+                //맨 뒤로 가서
                 temp = temp.next;
+            }
             temp.next = newNode;
         }
         count++;
@@ -71,8 +73,7 @@ public class MyLinkedList {
 
         if(position == 0){  //맨 앞을 삭제하는
             head = tempNode.next;
-        }
-        else{
+        } else {
             MyListNode preNode = null;
             for(i=0; i<position; i++){
                 preNode = tempNode;

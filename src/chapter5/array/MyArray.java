@@ -2,9 +2,9 @@ package chapter5.array;
 
 public class MyArray {
     int[] intArr;   	//int array
-    int count;  		//개수
+    int count;  		//요소 개수
 
-    public int ARRAY_SIZE;
+    public int ARRAY_SIZE; //배열 크기
     public static final int ERROR_NUM = -999999999;
 
     public MyArray()
@@ -18,7 +18,7 @@ public class MyArray {
     {
         count = 0;
         ARRAY_SIZE = size;
-        intArr = new int[size];
+        intArr = new int[ARRAY_SIZE];
     }
 
     public void addElement(int num)
@@ -109,7 +109,6 @@ public class MyArray {
         for(int i=0; i<count; i++){
             System.out.println(intArr[i]);
         }
-
     }
 
     public void removeAll()
