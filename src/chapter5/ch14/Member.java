@@ -1,13 +1,17 @@
-package chapter5.ch12;
+package chapter5.ch14;
 
+import java.util.Comparator;
 import java.util.Objects;
 
-public class Member extends chapter5.ch14.Member {
+public class Member implements Comparator<Member> {
 
     //hashSet을 사용할때는 hashSet이 관리할 클래스에 같은지 체크하는 메서드를 정의해줘야함
 
     private int memberId;
     private String memberName;
+
+    public Member() {
+    }
 
     public Member(int memberId, String memberName) {
         this.memberId = memberId;
@@ -36,6 +40,11 @@ public class Member extends chapter5.ch14.Member {
     }
 
     @Override
+    public int compare(Member member1, Member member2) {
+        return Integer.compare(member1.getMemberId(), member2.getMemberId());
+    }
+
+    /*@Override
     public boolean equals(Object o) {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
@@ -46,5 +55,11 @@ public class Member extends chapter5.ch14.Member {
     @Override
     public int hashCode() {
         return Objects.hash(getMemberId());
-    }
+    }*/
+
+    /*@Override
+    public int compareTo(Member member) {
+
+        return Integer.compare(this.memberId, member.memberId);
+    }*/
 }

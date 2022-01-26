@@ -15,7 +15,7 @@ public class MemberArrayList {
         this.arrayList = new ArrayList<>(size);
     }
 
-    public void addMember(Member member){
+    public void addMember(Member member) {
         arrayList.add(member);
     }
 
